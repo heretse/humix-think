@@ -3,12 +3,13 @@ applications:
   memory: 1024M
   instances: 1
   domain: mybluemix.net
-  name: <your_app_name> 
-  host: <your_app_name>
+  name: humix-kenton 
+  host: humix-kenton
 
   disk_quota: 1024M
   services:
-  - Humix-Cloudant-Service
+  - Humix-K-Cloudant-Service
+  #- Humix-Cloudant-Service
   - Humix-Speech-Service
   - Humix-Conversation-Service
 

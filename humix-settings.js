@@ -17,25 +17,26 @@ var path = require('path');
 
 var humixSettings = module.exports = {
 
-    appName: 'humix',
+    appName: 'humix-kenton',
 
     port: 3000,
 
     // 'local' or 'bluemix'
-    location: 'local',
+    location: 'bluemix',
 
     // 'couch' , 'redis'
     // NOTE: couch is the only supported option when using bluemix location
-    //storage: 'couch',
+    storage: 'couch',
+    couchUrl: 'https://c9ff4670-80f8-4b81-9d26-d9c0b7077065-bluemix:f6f1dfa8f31921ae9596283cb837dd4e5223fff094f785af8184871a8a10a690@c9ff4670-80f8-4b81-9d26-d9c0b7077065-bluemix.cloudant.com',
     //couchUrl: 'http://127.0.0.1:5984/',
 
-    storage: 'redis',
-    redisConfig: {
-         redisPort: "6379",
-         redisIP: "127.0.0.1",
-         redisPassword: "",
-         dbSelect: "0"
-    },
+    //storage: 'redis',
+    //redisConfig: {
+    //     redisPort: "6379",
+    //     redisIP: "127.0.0.1",
+    //     redisPassword: "",
+    //     dbSelect: "0"
+    //},
 
 
 
@@ -78,14 +79,14 @@ var humixSettings = module.exports = {
     // You can run the following command from within the Humix-Think install directory:
     // node -e "console.log(require('bcryptjs').hashSync(process.argv[1], 8));" password
     
-    // adminAuth: {
-    //     type: "credentials",
-    //     users: [{
-    //         username: "admin",
-    //         password: "$2a$08$ihnv8RnEI7J8FLdyHPhfiekJf1tSNVB0bw9/YzmMHsxFRIeqc13r2", //'password'
-    //         permissions: "*"
-    //     }]
-    // },
+    adminAuth: {
+        type: "credentials",
+        users: [{
+            username: "admin",
+            password: "$2a$08$1090YdNK2YEgJoc4JvozXOE22kE/dyj0gjQv5RInvMwn91fq6eynK",
+            permissions: "*"
+        }]
+    },
 
     httpStatic: path.join(__dirname, 'public'),
 

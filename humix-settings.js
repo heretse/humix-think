@@ -70,11 +70,23 @@ var humixSettings = module.exports = {
     // Move the admin UI
     httpAdminRoot: '/node-red',
     httpNodeRoot: '/node-red',
-    // You can protect the user interface with a userid and password by using the
-    // following property the password must be an md5 hash  eg..
-    // 5f4dcc3b5aa765d61d8327deb882cf99 ('password') httpAdminAuth:
-    // {user:"user",pass:"5f4dcc3b5aa765d61d8327deb882cf99"}, Serve up the welcome
-    // page
+    
+    // You can enable user authentication on the Editor and Admin API by adding the following into your file:
+    // The users property is an array of user objects. This allows you to define multiple users,
+    // each of whom can have different permissions.
+    // The password property is a suitable password hash.
+    // You can run the following command from within the Humix-Think install directory:
+    // node -e "console.log(require('bcryptjs').hashSync(process.argv[1], 8));" password
+    
+    // adminAuth: {
+    //     type: "credentials",
+    //     users: [{
+    //         username: "admin",
+    //         password: "$2a$08$ihnv8RnEI7J8FLdyHPhfiekJf1tSNVB0bw9/YzmMHsxFRIeqc13r2", //'password'
+    //         permissions: "*"
+    //     }]
+    // },
+
     httpStatic: path.join(__dirname, 'public'),
 
     functionGlobalContext: {},

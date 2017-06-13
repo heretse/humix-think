@@ -17,7 +17,7 @@ var path = require('path');
 
 var humixSettings = module.exports = {
 
-    appName: 'humix-kenton',
+    appName: 'humix-test-taipei',
 
     port: 3000,
 
@@ -27,7 +27,7 @@ var humixSettings = module.exports = {
     // 'couch' , 'redis'
     // NOTE: couch is the only supported option when using bluemix location
     storage: 'couch',
-    couchUrl: 'https://c9ff4670-80f8-4b81-9d26-d9c0b7077065-bluemix:f6f1dfa8f31921ae9596283cb837dd4e5223fff094f785af8184871a8a10a690@c9ff4670-80f8-4b81-9d26-d9c0b7077065-bluemix.cloudant.com',
+    couchUrl: 'https://4fa75cd1-58c9-40f8-b564-f0ea711bd506-bluemix:9490c5b340b894b4db5f02b357cf59bf1a6fec84543e2080bcb1049cd2d4a4f5@4fa75cd1-58c9-40f8-b564-f0ea711bd506-bluemix.cloudant.com',
     //couchUrl: 'http://127.0.0.1:5984/',
 
     //storage: 'redis',

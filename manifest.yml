@@ -1,7 +1,7 @@
 applications:
 - path: .
   memory: 1024M
-  instances: 1
+  instances: 2
   domain: mybluemix.net
   name: humix-test-taipei 
   host: humix-test-taipei
@@ -15,4 +15,4 @@ applications:
 # Add this back if you need Watson TTS service
 #  - Humix-TTS-Service
 #
-  command: node --max-old-space-size=384 server/app.js --settings ./humix-settings.js -v
+  command: node --max-old-space-size=384 -r bluemix-autoscaling-agent server/app.js --settings ./humix-settings.js -v

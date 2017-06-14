@@ -35,6 +35,7 @@
   "dependencies": {
     "async": "1.5.0",
     "bluebird": "^3.5.0",
+    "bluemix-autoscaling-agent": "*",
     "body-parser": "latest",
     "cfenv": "~1.0.0",
     "express": "latest",
@@ -44,6 +45,7 @@
     "nano": "~5.11.0",
     "needle": "^1.6.0",
     "node-red": "^0.16.2",
+    "node-red-contrib-blackloud-api": "git+https://github.com/heretse/node-red-contrib-blackloud-api.git",
     "node-red-contrib-humix": "git+https://github.com/heretse/node-red-contrib-humix.git",
     "node-red-contrib-telegrambot": "git+https://github.com/aaaamyamy/node-red-contrib-telegrambot.git",
     "node-red-node-cf-cloudant": "latest",

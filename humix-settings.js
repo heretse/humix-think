@@ -17,7 +17,7 @@ var path = require('path');
 
 var humixSettings = module.exports = {
 
-    appName: 'humix-test-taipei',
+    appName: 'humix-test-taipei',//humix-secom-demo
 
     port: 3000,
 
@@ -79,14 +79,14 @@ var humixSettings = module.exports = {
     // You can run the following command from within the Humix-Think install directory:
     // node -e "console.log(require('bcryptjs').hashSync(process.argv[1], 8));" password
     
-    adminAuth: {
-        type: "credentials",
-        users: [{
-            username: "admin",
-            password: "$2a$08$1090YdNK2YEgJoc4JvozXOE22kE/dyj0gjQv5RInvMwn91fq6eynK",
-            permissions: "*"
-        }]
-    },
+    //adminAuth: {
+    //    type: "credentials",
+    //    users: [{
+    //        username: "admin",
+    //        password: "$2a$08$1090YdNK2YEgJoc4JvozXOE22kE/dyj0gjQv5RInvMwn91fq6eynK",
+    //        permissions: "*"
+    //    }]
+    //},
 
     httpStatic: path.join(__dirname, 'public'),
 
